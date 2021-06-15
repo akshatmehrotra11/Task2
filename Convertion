@@ -1,0 +1,18 @@
+import java.util.Scanner;
+public class helloswitch {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Enter the no of minutes :");
+		int minutes=sc.nextInt();
+		
+		long minutes_in_year= 24*60*365;
+		
+		long year =(long) (minutes/minutes_in_year);
+		int days=(int)(minutes/60/24) % 365;
+		
+		System.out.println(minutes + " minutes is approximately " + year + " years and " + days + " days ");
+	}
+
+}
